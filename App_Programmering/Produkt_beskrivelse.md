@@ -8,7 +8,7 @@ Jeg har besluttet mig for at bruge android studio.
 
 __Features:__
 
-- Dark-theme
+- Dark-theme : All most done :white_check_mark:
 - Mulighed for at oprette en lokal profil
     - Brug af kamera i forhold til at uploade profil billede
         - Finde en måde hvor man kan beskære billeder osv

@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">Danny Interactive</string>
+    <string name="title_activity_settings">Settings</string>
+
+
+    <!-- Nav-menu Titles -->
     <string name="nav_profile_pic">Profile Picture</string>
     <string name="nav_title">Danny Interactive</string>
     <string name="nav_description">Min kode er perfekt!</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="theme_title">Theme</string>
+    <string name="dark_theme_switch">DarkTheme</string>
 </resources>

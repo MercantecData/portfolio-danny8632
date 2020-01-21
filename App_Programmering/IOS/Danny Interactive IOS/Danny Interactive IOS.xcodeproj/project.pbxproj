@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF5A9AD023D7180500641B4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5A9ACF23D7180500641B4A /* AppDelegate.swift */; };
+		FF5A9AD223D7180500641B4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5A9AD123D7180500641B4A /* SceneDelegate.swift */; };
+		FF5A9AD423D7180500641B4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5A9AD323D7180500641B4A /* ContentView.swift */; };
+		FF5A9AD623D7180700641B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5A9AD523D7180700641B4A /* Assets.xcassets */; };
+		FF5A9AD923D7180700641B4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5A9AD823D7180700641B4A /* Preview Assets.xcassets */; };
+		FF5A9ADC23D7180700641B4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5A9ADA23D7180700641B4A /* LaunchScreen.storyboard */; };
+		FF5A9AE723D7180700641B4A /* Danny_Interactive_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5A9AE623D7180700641B4A /* Danny_Interactive_IOSTests.swift */; };
+		FF5A9AF223D7180700641B4A /* Danny_Interactive_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5A9AF123D7180700641B4A /* Danny_Interactive_IOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF5A9AE323D7180700641B4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF5A9AC423D7180500641B4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF5A9ACB23D7180500641B4A;
+			remoteInfo = "Danny Interactive IOS";
+		};
+		FF5A9AEE23D7180700641B4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF5A9AC423D7180500641B4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF5A9ACB23D7180500641B4A;
+			remoteInfo = "Danny Interactive IOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF5A9ACC23D7180500641B4A /* Danny Interactive IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Danny Interactive IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5A9ACF23D7180500641B4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF5A9AD123D7180500641B4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF5A9AD323D7180500641B4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FF5A9AD523D7180700641B4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF5A9AD823D7180700641B4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF5A9ADB23D7180700641B4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF5A9ADD23D7180700641B4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF5A9AE223D7180700641B4A /* Danny Interactive IOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Danny Interactive IOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5A9AE623D7180700641B4A /* Danny_Interactive_IOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Danny_Interactive_IOSTests.swift; sourceTree = "<group>"; };
+		FF5A9AE823D7180700641B4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF5A9AED23D7180700641B4A /* Danny Interactive IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Danny Interactive IOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5A9AF123D7180700641B4A /* Danny_Interactive_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Danny_Interactive_IOSUITests.swift; sourceTree = "<group>"; };
+		FF5A9AF323D7180700641B4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF5A9AC923D7180500641B4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5A9ADF23D7180700641B4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5A9AEA23D7180700641B4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF5A9AC323D7180500641B4A = {
+			isa = PBXGroup;
+			children = (
+				FF5A9ACE23D7180500641B4A /* Danny Interactive IOS */,
+				FF5A9AE523D7180700641B4A /* Danny Interactive IOSTests */,
+				FF5A9AF023D7180700641B4A /* Danny Interactive IOSUITests */,
+				FF5A9ACD23D7180500641B4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF5A9ACD23D7180500641B4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF5A9ACC23D7180500641B4A /* Danny Interactive IOS.app */,
+				FF5A9AE223D7180700641B4A /* Danny Interactive IOSTests.xctest */,
+				FF5A9AED23D7180700641B4A /* Danny Interactive IOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF5A9ACE23D7180500641B4A /* Danny Interactive IOS */ = {
+			isa = PBXGroup;
+			children = (
+				FF5A9ACF23D7180500641B4A /* AppDelegate.swift */,
+				FF5A9AD123D7180500641B4A /* SceneDelegate.swift */,
+				FF5A9AD323D7180500641B4A /* ContentView.swift */,
+				FF5A9AD523D7180700641B4A /* Assets.xcassets */,
+				FF5A9ADA23D7180700641B4A /* LaunchScreen.storyboard */,
+				FF5A9ADD23D7180700641B4A /* Info.plist */,
+				FF5A9AD723D7180700641B4A /* Preview Content */,
+			);
+			path = "Danny Interactive IOS";
+			sourceTree = "<group>";
+		};
+		FF5A9AD723D7180700641B4A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FF5A9AD823D7180700641B4A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF5A9AE523D7180700641B4A /* Danny Interactive IOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF5A9AE623D7180700641B4A /* Danny_Interactive_IOSTests.swift */,
+				FF5A9AE823D7180700641B4A /* Info.plist */,
+			);
+			path = "Danny Interactive IOSTests";
+			sourceTree = "<group>";
+		};
+		FF5A9AF023D7180700641B4A /* Danny Interactive IOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF5A9AF123D7180700641B4A /* Danny_Interactive_IOSUITests.swift */,
+				FF5A9AF323D7180700641B4A /* Info.plist */,
+			);
+			path = "Danny Interactive IOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF5A9ACB23D7180500641B4A /* Danny Interactive IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF5A9AF623D7180700641B4A /* Build configuration list for PBXNativeTarget "Danny Interactive IOS" */;
+			buildPhases = (
+				FF5A9AC823D7180500641B4A /* Sources */,
+				FF5A9AC923D7180500641B4A /* Frameworks */,
+				FF5A9ACA23D7180500641B4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Danny Interactive IOS";
+			productName = "Danny Interactive IOS";
+			productReference = FF5A9ACC23D7180500641B4A /* Danny Interactive IOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF5A9AE123D7180700641B4A /* Danny Interactive IOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF5A9AF923D7180700641B4A /* Build configuration list for PBXNativeTarget "Danny Interactive IOSTests" */;
+			buildPhases = (
+				FF5A9ADE23D7180700641B4A /* Sources */,
+				FF5A9ADF23D7180700641B4A /* Frameworks */,
+				FF5A9AE023D7180700641B4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF5A9AE423D7180700641B4A /* PBXTargetDependency */,
+			);
+			name = "Danny Interactive IOSTests";
+			productName = "Danny Interactive IOSTests";
+			productReference = FF5A9AE223D7180700641B4A /* Danny Interactive IOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF5A9AEC23D7180700641B4A /* Danny Interactive IOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF5A9AFC23D7180700641B4A /* Build configuration list for PBXNativeTarget "Danny Interactive IOSUITests" */;
+			buildPhases = (
+				FF5A9AE923D7180700641B4A /* Sources */,
+				FF5A9AEA23D7180700641B4A /* Frameworks */,
+				FF5A9AEB23D7180700641B4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF5A9AEF23D7180700641B4A /* PBXTargetDependency */,
+			);
+			name = "Danny Interactive IOSUITests";
+			productName = "Danny Interactive IOSUITests";
+			productReference = FF5A9AED23D7180700641B4A /* Danny Interactive IOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF5A9AC423D7180500641B4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Mercantec Elev";
+				TargetAttributes = {
+					FF5A9ACB23D7180500641B4A = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					FF5A9AE123D7180700641B4A = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = FF5A9ACB23D7180500641B4A;
+					};
+					FF5A9AEC23D7180700641B4A = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = FF5A9ACB23D7180500641B4A;
+					};
+				};
+			};
+			buildConfigurationList = FF5A9AC723D7180500641B4A /* Build configuration list for PBXProject "Danny Interactive IOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF5A9AC323D7180500641B4A;
+			productRefGroup = FF5A9ACD23D7180500641B4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF5A9ACB23D7180500641B4A /* Danny Interactive IOS */,
+				FF5A9AE123D7180700641B4A /* Danny Interactive IOSTests */,
+				FF5A9AEC23D7180700641B4A /* Danny Interactive IOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF5A9ACA23D7180500641B4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5A9ADC23D7180700641B4A /* LaunchScreen.storyboard in Resources */,
+				FF5A9AD923D7180700641B4A /* Preview Assets.xcassets in Resources */,
+				FF5A9AD623D7180700641B4A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5A9AE023D7180700641B4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5A9AEB23D7180700641B4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF5A9AC823D7180500641B4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5A9AD023D7180500641B4A /* AppDelegate.swift in Sources */,
+				FF5A9AD223D7180500641B4A /* SceneDelegate.swift in Sources */,
+				FF5A9AD423D7180500641B4A /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5A9ADE23D7180700641B4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5A9AE723D7180700641B4A /* Danny_Interactive_IOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5A9AE923D7180700641B4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5A9AF223D7180700641B4A /* Danny_Interactive_IOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF5A9AE423D7180700641B4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF5A9ACB23D7180500641B4A /* Danny Interactive IOS */;
+			targetProxy = FF5A9AE323D7180700641B4A /* PBXContainerItemProxy */;
+		};
+		FF5A9AEF23D7180700641B4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF5A9ACB23D7180500641B4A /* Danny Interactive IOS */;
+			targetProxy = FF5A9AEE23D7180700641B4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF5A9ADA23D7180700641B4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF5A9ADB23D7180700641B4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF5A9AF423D7180700641B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF5A9AF523D7180700641B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF5A9AF723D7180700641B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Danny Interactive IOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Danny Interactive IOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Danny.Danny-Interactive-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF5A9AF823D7180700641B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Danny Interactive IOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Danny Interactive IOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Danny.Danny-Interactive-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF5A9AFA23D7180700641B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Danny Interactive IOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Danny.Danny-Interactive-IOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Danny Interactive IOS.app/Danny Interactive IOS";
+			};
+			name = Debug;
+		};
+		FF5A9AFB23D7180700641B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Danny Interactive IOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Danny.Danny-Interactive-IOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Danny Interactive IOS.app/Danny Interactive IOS";
+			};
+			name = Release;
+		};
+		FF5A9AFD23D7180700641B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Danny Interactive IOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Danny.Danny-Interactive-IOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Danny Interactive IOS";
+			};
+			name = Debug;
+		};
+		FF5A9AFE23D7180700641B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Danny Interactive IOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Danny.Danny-Interactive-IOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Danny Interactive IOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF5A9AC723D7180500641B4A /* Build configuration list for PBXProject "Danny Interactive IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF5A9AF423D7180700641B4A /* Debug */,
+				FF5A9AF523D7180700641B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF5A9AF623D7180700641B4A /* Build configuration list for PBXNativeTarget "Danny Interactive IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF5A9AF723D7180700641B4A /* Debug */,
+				FF5A9AF823D7180700641B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF5A9AF923D7180700641B4A /* Build configuration list for PBXNativeTarget "Danny Interactive IOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF5A9AFA23D7180700641B4A /* Debug */,
+				FF5A9AFB23D7180700641B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF5A9AFC23D7180700641B4A /* Build configuration list for PBXNativeTarget "Danny Interactive IOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF5A9AFD23D7180700641B4A /* Debug */,
+				FF5A9AFE23D7180700641B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF5A9AC423D7180500641B4A /* Project object */;
+}

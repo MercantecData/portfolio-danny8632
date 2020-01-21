@@ -10,10 +10,17 @@ import androidx.preference.PreferenceManager
 
 class SettingsActivity : AppCompatActivity() {
 
-    public var changed : Boolean = false
+    var changed : Boolean = false
 
     fun madeChanges(change : Boolean) {
         changed = change
+        val intent = Intent(this, SettingsActivity::class.java)
+        finish()
+        overridePendingTransition(
+            android.R.anim.fade_in,
+            android.R.anim.fade_out
+        )
+        startActivity(intent)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,12 +44,9 @@ class SettingsActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        if(changed)
-        {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
     class SettingsFragment : PreferenceFragmentCompat(), SharedPreferences.OnSharedPreferenceChangeListener{

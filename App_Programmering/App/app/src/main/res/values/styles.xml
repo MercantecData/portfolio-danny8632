@@ -9,6 +9,18 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:title">#000000</item>
+        <item name="textcolor">#000000</item>
+        <item name="backgroundcolor">@color/colorPrimary</item>
+        <item name="backgroundcolorDark">@color/colorPrimaryDark</item>
+
+
+
+        // change header color
+        <item name="android:textColorSecondary">@color/darkColorPrimaryDark</item>
+        // change separator color
+        <item name="android:listDivider">@color/darkColorPrimaryDark</item>
+
+
     </style>
 
 
@@ -23,6 +35,17 @@
         <item name="android:background">#222222</item>
         <item name="android:actionMenuTextColor">#ffffff</item>
         <item name="android:titleTextColor">#ffffff</item>
+        <item name="actionMenuTextColor">#ffffff</item>
+        <item name="android:color">#ffffff</item>
+        <item name="textcolor">#ffffff</item>
+        <item name="backgroundcolor">#333333</item>
+        <item name="backgroundcolorDark">#222222</item>
+
+        // change header color
+        <item name="android:textColorSecondary">@color/white_with_alpha</item>
+        // change separator color
+        <item name="android:listDivider">@color/white_with_alpha</item>
+
     </style>
 
 </resources>

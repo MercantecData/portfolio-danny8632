@@ -11,12 +11,15 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
+import android.text.Editable
+import android.text.TextWatcher
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.PopupMenu
 import androidx.core.content.FileProvider
 import androidx.core.net.toUri
+import androidx.core.widget.addTextChangedListener
 import androidx.preference.PreferenceManager
 import kotlinx.android.synthetic.main.activity_profile.*
 import java.io.File
@@ -31,6 +34,7 @@ import java.util.*
 //  Check if file exists:
 
 
+@Suppress("DEPRECATION")
 class Profile : AppCompatActivity() {
 
     val REQUEST_TAKE_PHOTO = 123
@@ -44,6 +48,8 @@ class Profile : AppCompatActivity() {
         val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
         val darktheme = sharedPreferences.getBoolean("dark_theme", false)
         val profilePicture = sharedPreferences.getString("profile_pic", "")
+
+        val profileName = sharedPreferences.getString("profile_name", "")
 
         //  Setting Color/theme for the activity:
         if(darktheme)
@@ -81,10 +87,18 @@ class Profile : AppCompatActivity() {
             }
             popupMenu.show()
         }
+
+        name_input_feild.setText(profileName)
     }
 
 
     override fun onBackPressed() {
+        val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
+        val editor = sharedPreferences.edit()
+
+        editor.putString("profile_name", name_input_feild.text.toString())
+        editor.apply()
+
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
         finish()

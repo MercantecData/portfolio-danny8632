@@ -21,4 +21,8 @@
     <!-- Profile page popup menu -->
     <string name="profilePic_Cam_Select">Camera</string>
     <string name="profilePic_Lib_Select">Camera Roll</string>
+
+
+    <string name="frontPageText">Hej og velkommen til min app. Dette er min første android app. Men håber du finder den hyggelig, og at du kan lide mit hunde-billede, som er hentet fra en api.</string>
+    <string name="dogDescription">Hunde-Billeder</string>
 </resources>

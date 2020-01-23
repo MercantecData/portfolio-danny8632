@@ -12,14 +12,16 @@
 
     <ImageView
         android:id="@+id/profile_profileImg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:layout_marginBottom="15dp"
         android:background="?attr/backgroundcolor"
         android:contentDescription="@string/nav_profile_pic"
+        android:scaleType="centerCrop"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <TextView
+        android:id="@+id/profileNameTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/backgroundcolor"

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group>
         <item
-            android:id="@+id/nav_profile"
+            android:id="@+id/nav_dark"
             android:icon="@drawable/ic_profile"
             android:title="DarkTheme" />
         <item
@@ -17,16 +18,19 @@
     </group>
 
 
-    <item android:title="Account Settings">
+    <item
+        android:title="@string/title_activity_settings"
+        android:visible="true">
         <menu>
             <item
-                android:id="@+id/nav_update"
+                android:id="@+id/nav_profile"
                 android:icon="@drawable/ic_profile"
-                android:title="Update Profile"/>
+                android:title="@string/nav_profile"/>
             <item
-                android:id="@+id/nav_logout"
-                android:icon="@drawable/ic_profile"
-                android:title="Sign Out"/>
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/nav_settings"
+                app:showAsAction="withText" />
         </menu>
     </item>
 </menu>

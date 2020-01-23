@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cam_select"
+        android:title="@string/profilePic_Cam_Select" />
+    <item
+        android:id="@+id/lib_select"
+        android:title="@string/profilePic_Lib_Select"/>
+
+</menu>

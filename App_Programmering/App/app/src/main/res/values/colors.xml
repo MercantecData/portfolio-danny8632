@@ -7,4 +7,6 @@
     <color name="darkColorPrimary">#333333</color>
     <color name="darkColorPrimaryDark">#222222</color>
     <color name="darkColorAccent">#D81B60</color>
+
+    <color name="white_with_alpha">#ffffff</color>
 </resources>

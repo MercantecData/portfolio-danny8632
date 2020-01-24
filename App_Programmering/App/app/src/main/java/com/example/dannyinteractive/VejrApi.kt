@@ -1,39 +1,36 @@
 package com.example.dannyinteractive
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.BitmapFactory
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.preference.PreferenceManager
-import cesarferreira.faker.loadFromUrl
 import com.android.volley.Request
 import com.android.volley.RequestQueue
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.beust.klaxon.Klaxon
+import com.beust.klaxon.JsonObject
+import com.beust.klaxon.Parser
 import com.google.android.material.navigation.NavigationView
-import kotlinx.android.synthetic.main.content_main.*
+import kotlinx.android.synthetic.main.vejr_content.*
 
-
-class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
-
-    class Data(val message: String, val status: String)
+class VejrApi : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     lateinit var toolbar: Toolbar
     lateinit var drawerLayout: DrawerLayout
     lateinit var navView: NavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
 
         val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
         val darktheme = sharedPreferences.getBoolean("dark_theme", false)
@@ -47,7 +44,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             setTheme(R.style.AppTheme)
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_vejr_api)
 
 
         toolbar = findViewById(R.id.toolbar)
@@ -64,8 +61,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         val hView: View = navView.getHeaderView(0)
 
-
-
         if(profilePicture != null && profilePicture != "")
             hView.findViewById<ImageView>(R.id.profile_profileImg).setImageBitmap(BitmapFactory.decodeFile(profilePicture))
 
@@ -77,21 +72,25 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
         val queue = Volley.newRequestQueue(this)
-        val url = "https://dog.ceo/api/breeds/image/random"
+        val vejrUrl = "https://vejr.eu/api.php?location=Silkeborg&degree=C"
 
-        getDogPicture(queue, url)
+        getWeather(queue, vejrUrl)
     }
 
 
-    fun getDogPicture(queue: RequestQueue, url: String) {
+    @SuppressLint("SetTextI18n")
+    fun getWeather(queue: RequestQueue, url: String) {
 
         val stringRequest = StringRequest(Request.Method.GET, url, Response.Listener<String> { response ->
+                val parser: Parser = Parser.default()
+                val stringBuilder: StringBuilder = StringBuilder(response)
+                val json: JsonObject = parser.parse(stringBuilder) as JsonObject
 
-            val result = Klaxon()
-                .parse<Data>(response)
+                val weatherData: JsonObject? = json.obj("CurrentData") as JsonObject
 
-            frontPageImageView.loadFromUrl(result?.message.toString())
-        },
+                VejrtextView.text = "Tempture: " + weatherData?.get("temperature") + "°C\n " + weatherData?.get("skyText") + "\n humidity: " + weatherData?.get("humidity") + "\n Wind speed: " + weatherData?.get("windText")
+
+            },
             Response.ErrorListener { println("That didn't work!") })
 
         queue.add(stringRequest)
@@ -101,8 +100,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.nav_vejr -> {
-                startActivity(Intent(this, VejrApi::class.java))
+            R.id.nav_home -> {
+                startActivity(Intent(this, MainActivity::class.java))
             }
             R.id.nav_settings -> {
                 startActivity(Intent(this, SettingsActivity::class.java))
